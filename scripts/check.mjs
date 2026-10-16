@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 const root=process.cwd();
-const required=['dist/index.html','dist/app.js','dist/data.js','dist/engine.js','dist/styles.css','dist/assets/favicon.svg','dist/assets/Vazirmatn-Regular.woff2','dist/assets/Vazirmatn-Bold.woff2','dist/assets/OFL.txt','vercel.json'];
+const required=['dist/index.html','dist/app.js','dist/data.js','dist/engine.js','dist/styles.css','dist/assets/favicon.svg','dist/assets/Vazirmatn-Regular.woff2','dist/assets/Vazirmatn-Bold.woff2','dist/assets/OFL.txt','dist/assets/aria-gholamnia.jpg','vercel.json'];
 for(const f of required)if(!fs.existsSync(path.join(root,f)))throw Error('Missing file: '+f);
 for(const f of ['app','data','engine'])execFileSync(process.execPath,['--check',`dist/${f}.js`],{stdio:'inherit'});
 const html=fs.readFileSync('dist/index.html','utf8'), css=fs.readFileSync('dist/styles.css','utf8');
