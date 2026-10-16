@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "vitara-static",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\0135816s\\AppData\\Local\\Temp\\claude\\C--MyDriveD-Personal-file-AriaWebsite-Vitara-Websit\\5bf0b035-4761-4556-abcc-c861a8b01f12\\scratchpad\\serve.ps1", "-Root", "C:\\MyDriveD\\Personal file\\AriaWebsite\\Vitara_Websit\\dist", "-Port", "3000"],
+      "port": 3000
+    }
+  ]
+}
