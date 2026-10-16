@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#174f40">
+ <meta name="description" content="ویتارا؛ دانشنامه فارسی ۱۳ ویتامین ضروری، محاسبه دریافت روزانه، مرور منابع علمی و تداخلات منتخب.">
+ <title>ویتارا | دانش ویتامین، برای زندگی بهتر</title>
+ <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+ <link rel="stylesheet" href="styles.css">
+ <script type="module" src="app.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#main" data-action="skipContent">رفتن به محتوای اصلی</a>
+ <div class="mobile-scrim" id="scrim"></div>
+ <aside class="sidebar" id="sidebar" aria-label="منوی اصلی">
+  <a href="#home" class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>ویتارا<small>دانش ویتامین، زندگی بهتر</small></span></a>
+  <span class="nav-caption">مسیر آگاهی شما</span>
+  <nav id="navigation">
+   <a href="#home" data-route="home"><span data-icon="grid"></span>نمای کلی</a>
+   <a href="#vitamins" data-route="vitamins"><span data-icon="book"></span>دانشنامه ویتامین‌ها<span class="nav-count">۱۳</span></a>
+   <a href="#calculator" data-route="calculator"><span data-icon="calculator"></span>محاسبه دریافت روزانه</a>
+   <a href="#compare" data-route="compare"><span data-icon="compare"></span>مقایسه ویتامین‌ها</a>
+   <a href="#safety" data-route="safety"><span data-icon="shield"></span>ایمنی و تداخلات</a>
+   <a href="#evidence" data-route="evidence"><span data-icon="spark"></span>منابع و شواهد علمی</a>
+  </nav>
+  <div class="sidebar-bottom"><div class="professional-box"><span data-icon="briefcase"></span><strong>فضای کار تخصصی</strong><p>مرور دریافت‌ها و تهیه گزارش</p><a href="#workspace">ورود به فضای کار <span>←</span></a></div><button class="privacy-link" data-action="privacy"><span data-icon="lock"></span>حریم خصوصی شما</button><span class="sidebar-version">ویتارا · نسخه ۱٫۰</span></div>
+ </aside>
+ <div class="app-shell">
+  <header class="topbar"><div class="topbar-start"><button class="icon-btn mobile-menu" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false"><span data-icon="menu"></span></button><span class="breadcrumb" id="breadcrumb">خانه <b> / </b> نمای کلی</span></div><div class="topbar-end"><span class="educational"><i></i>آگاهی مبتنی بر شواهد</span><button class="avatar" data-action="profile" aria-label="تنظیم مشخصات مرجع"><span data-icon="user"></span></button></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><span><b>ویتارا</b> · همراه شما برای انتخاب آگاهانه</span><span>آموزش و مقایسه دریافت؛ بدون تشخیص یا تجویز درمان <a href="#evidence">روش علمی و منابع ↗</a></span></footer>
+ </div>
+ <dialog id="dialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <input type="file" id="importFile" accept="application/json,.json" hidden>
+ <noscript>برای استفاده از ابزارهای ویتارا، جاوااسکریپت مرورگر را فعال کنید.</noscript>
+</body>
+</html>
